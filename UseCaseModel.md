@@ -13,22 +13,43 @@
 - Requirements 
   - Allow user to add job details.
 - Pre-conditions
-  - User is in job entry UI.
+  - User is in job entry page.
 - Post-conditions
-  - Job details are added to database
+  - Job details are saved to database
+- Scenarios:
+  - Normal
+    - User enters job details
+    - User chooses to save job, and job details are saved to database. 
+  - Alternate
+    - User chooses to cancel, then UI goes back to main UI without doing anything.	      
+
+### Offer Entry
+
+- Requirements
+  - Allow user to add offer details.
+- Pre-conditions
+  - User is in offer entry page.
+- Post-conditions
+  - Offer details are added to database. 
   - User returns to main page without saving.
 - Scenarios:
-  - User enters job description.
-  - If user chooses to save job, job description is saved to database. If user chooses to cancel, UI goes back to main UI without doing anything.	      
+   1. User enters offer details.
+   2. User chooses to save offer, and offer is saved to database.
+   3. User chooses to canel, then UI goes back to main UI without doing anything.
 
-Offer Entry
+### Compare Job and Offer
 
- - Requirements: Allow user to add offer details.
- - Pre-conditions: User is in offer entry UI.
- - Post-conditions: Offer details are added to database, or user returns to main page without saving.
- - Scenarios:
-   1. User enters inputs job description.
-   2. If user chooses to save job, job description is saved to database. If user chooses to cancel, UI goes back to main UI without doing anything.
+- Requirements
+  - Allow user to comapre to job after entering an offer.
+- Pre-conditions
+  - User enters one offer and job detail is present.
+- Post-conditions
+  - A comparison between job and offer is displayed to user.
+- Scenarios:
+   1. User enters offer information.
+   2. User chooses to compare with job.
+   3. Job and comparison settings are pulled from database.
+   3. Job and offer are compared.
 
 Comparison Settings Entry
 
