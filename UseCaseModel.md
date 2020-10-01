@@ -8,7 +8,33 @@
 
 ## 2 Use Case Descriptions
 
-*For each use case in the use case diagram, this section should contain a description, with the following elements:*
+Current Job Entry
+
+- Requirements 
+  - Allow user to add job details.
+- Pre-conditions
+  - User is in job entry UI.
+- Post-conditions
+  - Job details are added to database
+  - User returns to main page without saving.
+- Scenarios:
+  - User enters job description.
+  - If user chooses to save job, job description is saved to database. If user chooses to cancel, UI goes back to main UI without doing anything.	      
+
+Offer Entry
+
+ - Requirements: Allow user to add offer details.
+ - Pre-conditions: User is in offer entry UI.
+ - Post-conditions: Offer details are added to database, or user returns to main page without saving.
+ - Scenarios:
+   1. User enters inputs job description.
+   2. If user chooses to save job, job description is saved to database. If user chooses to cancel, UI goes back to main UI without doing anything.
+
+Comparison Settings Entry
+
+Compare Selected Job/Offers
+
+
 
 - *Requirements: High-level description of what the use case must allow the user to do.*
 - *Pre-conditions: Conditions that must be true before the use case is run.*
