@@ -1,11 +1,10 @@
 # Project Plan
 
-*
 **Author**: Team047
 
 ## 1 Introduction
 
-*This product is an Android app that helps users compare their current job and offers based on a comprehensive score.
+This product is an Android app that helps users compare their current job and offers based on a comprehensive score.
 
 ## 2 Process Description
 
@@ -40,7 +39,7 @@
   - Exit criteria: None.
 
 ## 3 Team
-Kenny Le, Huibin Luo, Qing Song
+Team members: Kenny Le, Huibin Luo, Qing Song
 
 
 - Product Owner. Leads the team and prioritizes the work backlog and needs. Oversees the whole software development process. Acts as a liaison between team and customer.
