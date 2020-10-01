@@ -31,11 +31,12 @@
   - User is in offer entry page.
 - Post-conditions
   - Offer details are added to database. 
-  - User returns to main page without saving.
 - Scenarios:
-   1. User enters offer details.
-   2. User chooses to save offer, and offer is saved to database.
-   3. User chooses to canel, then UI goes back to main UI without doing anything.
+  - Normal
+    - User enters offer details.
+    - User chooses to save offer, and offer is saved to database.
+  - Alternate
+    - User chooses to canel, then UI goes back to main UI without doing anything.
 
 ### Compare Job and Offer
 
@@ -46,18 +47,54 @@
 - Post-conditions
   - A comparison between job and offer is displayed to user.
 - Scenarios:
-   1. User enters offer information.
-   2. User chooses to compare with job.
-   3. Job and comparison settings are pulled from database.
-   3. Job and offer are compared.
+   - User enters offer information.
+   - User chooses to compare with job.
+   - Job and comparison settings are pulled from database.
+   - Job and offer are compared and displayed to user.
 
-Comparison Settings Entry
+### Comparison Settings Entry
 
-Compare Selected Job/Offers
+- Requirements
+  - Allow user to adjust comparison settings.
+- Pre-conditions
+  - User is in comparison adjustment page.
+- Post-conditions
+  - Comparison settings are added to database. 
+- Scenarios:
+  - Normal
+    - User enters comparison settings.
+    - Comparison settings are saved to database.
 
+### Compare Selected Job/Offers
 
+- Requirements
+  - Show user a list of ranked offers/job.
+- Pre-conditions
+  - User is in compare offer page.
+- Post-conditions
+  - A list of ranked offers/jobs is displayed to user. 
+- Scenarios:
+  - Normal
+    - job and offer detail is pulled from database.
+    - Comparison settings are pulled from database.
+    - Job and offer scores are calculated.
+    - Job and offers are sorted by score.
+    - A list is displayed to user.
+  - Exception
+    - Job and offer database is empty and there is nothing to calculate and display.
 
-- *Requirements: High-level description of what the use case must allow the user to do.*
-- *Pre-conditions: Conditions that must be true before the use case is run.*
-- *Post-conditions Conditions that must be true once the use case is run.*
-- *Scenarios: Sequence of events that characterize the use case. This part may include multiple scenarios, for normal, alternate, and exceptional event sequences. These scenarios may be expressed as a list of steps in natural language or as sequence diagrams.*
+### Select and compare two jobs
+
+- Requirements
+  - Allow user to select two job/offers from the list and compare them
+- Pre-conditions
+  - User is in compare offer page and list of job/offers are ranked and displayed.
+- Post-conditions
+  - A comparison between selected job/offers is displayed to user.
+- Scenarios:
+  - Normal
+    - Two job/offers are selected.
+    - job/offer details are pulled from database.
+    - Job/offer are compared and displayed to user.
+  - Exception
+    - There is less than two job/offer available in database. User is not able to compare.
