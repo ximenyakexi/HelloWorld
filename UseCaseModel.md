@@ -8,7 +8,7 @@
 
 ## 2 Use Case Descriptions
 
-Current Job Entry
+### Current Job Entry
 
 - Requirements 
   - Allow user to add job details.
