@@ -4,7 +4,7 @@
 
 ## 1 Use Case Diagram
 
-![Use case](./CS6300 Team047 Use case diagram.pdf)
+![Use case](./useCaseDiagram.pdf)
 
 ## 2 Use Case Descriptions
 
